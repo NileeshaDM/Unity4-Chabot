@@ -1,0 +1,6 @@
+keras_nightly
+tensorflow
+numpy
+nltk
+keras
+flask
