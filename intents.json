@@ -1,0 +1,321 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi there",
+        "How are you",
+        "Is anyone there?",
+        "Hey",
+        "Hola",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, thanks for asking",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Nice chatting to you, bye",
+        "Till next time"
+      ],
+      "responses": [
+        "See you!",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Awesome, thanks",
+        "Thanks for helping me"
+      ],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"],
+      "context": [""]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "sdfasga",
+        "yuifukrth",
+        "494654",
+        "sdfsd5454",
+        "5644dtrhsr",
+        "",
+        " "
+      ],
+      "responses": [
+        "Sorry, I can't understand you",
+        "Please give me more info",
+        "Not sure I understand"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "shop",
+      "patterns": [
+        "What is your shop?",
+        "What is the name of your restaurant?",
+        "What is your restaurant name?",
+        "What is your shop called?"
+      ],
+      "responses": [
+        "Our restaurant is called Unity4 Kitchen",
+        "Our shop is a restaurant called Unity4 Kitchen",
+        "Our restaurant is Unity4 Kitchen"
+      ],
+      "context": [""]
+    },
+
+    {
+      "tag": "contact",
+      "patterns": ["how to order?", "how to get"],
+      "responses": [
+        "You can contact us through our website or phone number",
+        "Our website is 'www.unit4.com' and our phone number is '01123456789'"
+      ],
+      "context": [""]
+    },
+
+    {
+      "tag": "options",
+      "patterns": [
+        "What are your options",
+        "food items?",
+        "What food are available?",
+        "What is the today menu?",
+        "What can you give me today?",
+        "What is available today today?",
+        "What are available today?",
+        "What are the available food items?"
+      ],
+      "responses": ["List food items from the database"],
+      "context": [""]
+    },
+    {
+      "tag": "food.desc",
+      "patterns": [
+        "more about ",
+        "what is ",
+        "Can you tell me more about ?",
+        "can you give me more details about?",
+        "Can you tell me more infromation about?",
+        "May I know more about?",
+        "description about",
+        "can you provide more details about"
+      ],
+      "responses": ["Sorry, I couldn't find the description"],
+      "context": [""]
+    },
+    {
+      "tag": "available.specific",
+      "patterns": [
+        "Is this available?",
+        "Are kottu available today?",
+        "is biriyani available today?",
+        "Tell me the availability of"
+      ],
+      "responses": [
+        "Sorry, this food item is not available today",
+        "Sorry, the food item is sold out, but we havee other options"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "prices",
+      "patterns": [
+        "How much for",
+        "What is the price of",
+        "Price?",
+        "Tell me the price of"
+      ],
+      "responses": ["Sorry I couldn't find the price "],
+      "context": [""]
+    },
+    {
+      "tag": "promotions.all",
+      "patterns": [
+        "Are there any promotions?",
+        "What are the promotions?",
+        "Tell me about promotions",
+        "Any discounts available?",
+        "do you have any promotions?",
+        "any promotions?"
+      ],
+      "responses": [
+        "Sorry, there are no promotions currently",
+        "There are no promotions at the moment",
+        "No promotions at the moment, but there will be soon!"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "promotions.specific",
+      "patterns": [
+        "Are there any promotions for ",
+        "Tell me the promotion for ",
+        "Any discounts for ",
+        "Any promotions on"
+      ],
+      "responses": [
+        "There are no promotions for this food item currently",
+        "Sorry, there are no promotions for this currently"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "orderID.Checking",
+      "patterns": [
+        "Where is my order ?",
+        "What's the status of my order  ?",
+        "Can you tell me when my food will be delivered?",
+        "May I know the order status of my order",
+        "order status?"
+      ],
+      "responses": ["May I know your order ID?"],
+      "context": [""]
+    },
+    {
+      "tag": "order.tracking",
+      "patterns": [
+        "oid111 ",
+        "oid123 ",
+        "oid12 ",
+        "oid1 ",
+        "oid",
+        "it is ",
+        "its ",
+        "My order id is",
+        "Order ID: ",
+        "Order number: "
+      ],
+      "responses": ["I'm sorry, check the order ID again"],
+      "context": [""]
+    },
+    {
+      "tag": "bf.food.recommendation",
+      "patterns": [
+        "Can you suggest something for my breakfast?",
+        "can you recommend something for my breakfast?",
+        "Any breakfast recommendations?",
+        "Any breakfast food item recommendation?",
+        "Any food items that fits for my breakfast?"
+      ],
+      "responses": ["Sorry, no Breakfast food items found in the database."],
+      "context": [""]
+    },
+    {
+      "tag": "lunch.food.desc",
+      "patterns": [
+        "Can you suggest something for my Lunch?",
+        "can you recommend something for my Lunch?",
+        "Any lunch recommendations?",
+        "Any lunch food item recommendation?",
+        "Any food items that fits for my Lunch?"
+      ],
+      "responses": ["Sorry, no Lunch food items found in the database."],
+      "context": [""]
+    },
+    {
+      "tag": "eve.food.desc",
+      "patterns": [
+        "Any evening snack recommendations?",
+        "Any evening snack  suggestions?",
+        "Any  snacks that fits for this perfect evening?",
+        "Can you suggest something for evening snack?",
+        "can you recommend something for evening  snack?"
+      ],
+      "responses": ["Sorry, no Evening snacks   found in the database."],
+      "context": [""]
+    },
+    {
+      "tag": "dinner.food.desc",
+      "patterns": [
+        "Any dinner recommendations?",
+        "Any dinner food item recommendation?",
+        "Any food items that fits for my dinner?",
+        "Can you suggest something for my Dinner?",
+        "can you recommend something for my Dinner?"
+      ],
+      "responses": ["Sorry, no Dinner food items found in the database."],
+      "context": [""]
+    },
+    {
+      "tag": "food.type",
+      "patterns": [
+        "what are the available vegan foods",
+        "do you have any vegan options?",
+        "what are the available vegetarian food items",
+        "can you recommend me some vegetarian foods",
+        "Can you suggest me some veg foods",
+        "any vegan recommendations?"
+      ],
+      "responses": ["Sorry, no vegan food items found in the database."],
+      "context": [""]
+    },
+    {
+      "tag": "food.non_veg_type",
+      "patterns": [
+        "can you suggest me some non veg foods?",
+        "can you suggest me some non-veg foods?",
+        "what are the available non-vegan foods",
+        "do you have any non-vegan options?",
+        "what are the available non vegetarian food items",
+        "can you recommend me some non-vegetarian foods",
+        "non vegetarian?",
+        "non-vegan?",
+        "non-vegetarian?",
+        "any non vegan recommendations?"
+      ],
+      "responses": ["Sorry, no non-vegan food items found in the database."],
+      "context": [""]
+    },
+    {
+      "tag": "tot_prices",
+      "patterns": [
+        "How much is the total price for  order no:",
+        "What is the total price for my order, id:122",
+        "total Price of my order?",
+        "Total amount of my order ?",
+        "Tell me the total cost of my order, order ID: 122"
+      ],
+      "responses": [
+        "Sorry, I couldn't find the total price for the order ID you provided"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "error-handling",
+      "patterns": [
+        "I don't understand",
+        "Can you repeat that?",
+        "What do you mean?",
+        "That doesn't make sense",
+        "Error",
+        "Invalid input",
+        "I need help",
+        "Confused",
+        "I'm lost",
+        "Not sure what you're asking",
+        "This doesn't work"
+      ],
+      "responses": [
+        "I'm still learning and might not fully understand your request. Could you please provide more details?"
+      ],
+      "context": [""]
+    }
+  ]
+}
